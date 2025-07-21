@@ -1,6 +1,10 @@
 package Class;
 
-public class Charmander extends Pokemon {
+import Interface.IFuego;
+
+public class Charmander extends Pokemon implements IFuego{
+
+    public Charmander(){}
 
     @Override
     protected void atqPlacaje() {
@@ -8,13 +12,28 @@ public class Charmander extends Pokemon {
     }
 
     @Override
-    protected void atqAraniazo() {
+    public void atqAraniazo() {
         System.out.println("Charmander ataca con arañazo");
     }
 
     @Override
     protected void atqMordisco() {
         System.out.println("Charmander da un fuerte mordisco");
+    }
+
+    @Override
+    public void atqPunioFuego() {
+        System.out.println("Charmander prepara su brazo y lanza un Puño fuego");
+    }
+
+    @Override
+    public void atqLanzallamas() {
+        System.out.println("Charmander uso Lanzallamas");
+    }
+
+    @Override
+    public void atqAscuas() {
+        System.out.println("Una rafaga de fuego se hace presente. Charmander uso Ascuas");
     }
     
 }

@@ -4,6 +4,8 @@ import Interface.IPlanta;
 
 public class Bulbasaur extends Pokemon implements IPlanta{
 
+    public Bulbasaur(){}
+
     @Override
     protected void atqPlacaje() {
         System.out.println("Bulbasaur ha usado placaje");
@@ -11,7 +13,7 @@ public class Bulbasaur extends Pokemon implements IPlanta{
     }
 
     @Override
-    protected void atqAraniazo() {
+    public void atqAraniazo() {
         System.out.println("Bulbasaur ha utilizado arañazo");
 
     }
@@ -29,8 +31,7 @@ public class Bulbasaur extends Pokemon implements IPlanta{
 
     @Override
     public void atqParalizar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'atqParalizar'");
+        System.out.println("Bulbasaur te paraliza con sus plantas");
     }
     
 }
